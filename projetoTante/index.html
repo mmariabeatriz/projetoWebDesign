@@ -1,0 +1,157 @@
+<!-- input com classe "erro-preencher" na linha 87" -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/manifest.json">
+	<meta name="description" content="Gere seu link e encaminhe os usuários diretamente para seu  WhatsApp sem a necessidade que exista o cadastro do seu número na agenda do celular.">
+	<title>Tante - Gerador de link</title>
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<script src="assets/js/jquery.mask.js"></script>
+</head>
+
+
+<body>
+	<header id="nav">
+		<img src="assets/img/logo-tante.svg" id="logo-nav" class="logo-nav" alt="logo da Tante">
+		<ul id="navbar">
+			<li>
+				<a href="#como-funciona">Como funciona</a>
+			</li>
+			<li id="mid-op">
+				<a href="#porque-usar">Por que usar</a>
+			</li>
+			<li>
+				<a href="#sec-cinza">Gerar link</a>
+			</li>
+		</ul>
+	</header>
+
+	<section id="sec-branca">
+		<div class="gerador-inicial">
+			<div class="gerador-inicial-texto">
+				<h1>Gerador de link para Whatsapp</h1>
+				<div class="linha"></div>
+				<p>Uma ferramenta que direciona usuários diretamente para seu chat do WhatsApp sem precisar cadastrar o número
+					na agenda do telefone.</p>
+				<a href="#sec-cinza">Gerar link</a>
+			</div>
+			<div class="mulher-celular">
+				<img src="assets/img/mulher-celular.svg" alt="">
+				<!-- <div class="mulher"></div>
+                    <div class="mao"></div>            <-------FUTURA ANIMAÇÃO A SER ADICIONADA
+                    <div class="planta-amarela"></div>
+                    <div class="planta-preta"></div> -->
+			</div>
+		</div>
+		<div id="como-funciona" class="como-funciona">
+			<h2>Como funciona</h2>
+			<div class="linha"></div>
+			<div class="passos-container">
+				<div class="passo">
+					<img src="assets/img/whatsapp.svg" alt="">
+					<p>Insira o número do seu WhatsApp
+					</p>
+				</div>
+				<div class="passo">
+					<img src="assets/img/tante.svg" alt="">
+					<p>Verifique se o link está funcionando corretamente.</p>
+				</div>
+				<div class="passo">
+					<img src="assets/img/conexoes.svg" alt="">
+					<p>Feito isso, agora é só compartilhar!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="fundo-amarelo"></div>
+	<section id="sec-cinza">
+		<img src="assets/img/celular.svg" alt="">
+		<div class="gere-aqui">
+			<h2>Gere aqui seu link para Whatsapp</h2>
+			<div id="borda-gerar" style="display:flex;">
+				<form action="">
+					<input id="celular" placeholder="(DDD) 9 9999-9999">
+				</form>
+				<button onclick="gerarLink()">Gerar link</button>
+			</div>
+			<div class="link-gerado" style="display:none;">
+				<p id="link-final"></p>
+				<button onclick="copyer('link-final')">Copiar</button>
+			</div>
+			<p>Não guardamos nenhum dado informado.</p>
+			<!-- div abaixo corresponde ao campo onde vai aparecer o link para ser copiado. -->
+		</div>
+	</section>
+	<section id="sec-verde">
+		<div id="porque-usar" class="porque-usar">
+			<h2>Por que usar o gerador de link?</h2>
+			<ul class="lista-porques">
+				<li>
+					<p>Em poucos segundos, você será capaz de criar um link que direcionará para o seu WhatsApp, podendo compartilhá-lo diretamente com seus clientes. </p>
+				</li>
+				<li>
+					<p>Você pode aumentar suas vendas usando o gerador para criar uma maior aproximação com seus clientes, através de uma  comunicação direta.</p>
+				</li>
+				<li>
+					<p>Você pode usar o mesmo link para anexar o seu WhatsApp ao seu site, que pode ser usado perfeitamente como um Serviço de Atendimento ao Cliente (SAC).</p>
+				</li>
+			</ul>
+		</div>
+		<img src="assets/img/homem-computador.svg" alt="">
+	</section>
+	<footer>
+		<a href="http://tante.com.br/">
+			<img src="assets/img/minilogo-branca-tante.svg" alt="">
+			<p>Copyright © 2020 Tante Comunicação Digital.</p>
+		</a>
+	</footer>
+</body>
+<script>
+	$(document).ready(function(){
+		$('#celular').mask('(00) 00000-0009');
+	});
+</script>
+<script>
+	window.onscroll = function () {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			document.getElementById("nav").style.height = "4em";
+			document.getElementById("nav").style.backgroundColor = "white";
+			document.getElementById("nav").style.transition = "300ms";
+			document.getElementById("nav").style.boxShadow = "2px 2px 10px #a3afbd";
+			document.getElementById("logo-nav").style.width = "7em";
+		} else {
+			document.getElementById("nav").style.height = "7em";
+			document.getElementById("nav").style.backgroundColor = "transparent";
+			document.getElementById("nav").style.transition = "300ms";
+			document.getElementById("nav").style.boxShadow = "none";
+			document.getElementById("logo-nav").style.width = "8em";
+		}
+	}
+</script>
+<script src="assets/js/gerandoLink.js"> </script>
+<script src="assets/js/copyer.js"></script>
+</html>

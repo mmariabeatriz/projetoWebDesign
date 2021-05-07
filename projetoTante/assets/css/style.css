@@ -1,0 +1,558 @@
+/* 
+Olá! :)
+
+A borda vermelha de erro está comentada na linha 290. 
+
+O campo pra copiar o link está com display none na linha 189 (obs: trocar para display FLEX e **NÃO** para display BLOCK)
+*/
+
+
+body {
+    background-color: white;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header, #navbar, .gerador-inicial, #sec-cinza, #sec-verde {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+#navbar li a {
+    font-family: 'Lato', sans-serif;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3E464F;
+}
+.logo-nav {
+    width: 8em;
+}
+header {
+    height: 6em;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3E464F;
+}
+p {
+    font-family: 'Open sans', sans-serif;
+
+}
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #3E464F;
+}
+.gerador-inicial {
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 4em;
+}
+.gerador-inicial-texto {
+    width: 50%;
+}
+.gerador-inicial-texto h1 {
+    width: 69%;
+}
+.gerador-inicial-texto a {
+    background-color: #FFCA1A;
+    padding: 1em 4em;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 180%;
+}
+.gerador-inicial-texto p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #3E464F;
+    margin-bottom: 2em;
+}
+#navbar li, #navbar li a {
+    text-decoration: none;
+    list-style: none;
+    transition: 250ms;
+    color: #3E464F;
+}
+#navbar li a:hover {
+    color: #33a164;
+    transition: 250ms;
+}
+#fundo-amarelo {
+    background-image: url(../img/fundo-amarelo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 63em;
+    height: 50em;
+    z-index: -1;
+    right: 0;
+    top: 0%;
+}
+#navbar {
+    width: 40%;
+}
+.mulher-celular {
+    overflow: hidden;
+    width: 30em;
+    height: 30em;
+    position: relative;
+}
+#sec-branca {
+    margin-top: 8em;
+}
+.mulher-celular img {
+    width: 25em;
+    z-index: 10;
+}
+.como-funciona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+.passos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 50em;
+}
+.passo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.passo p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.015em;
+    color: #3E464F;
+    text-align: center;
+}
+#sec-cinza {
+    background-color: #F0F0F0;
+    justify-content: center;
+    align-items: center;
+
+}
+.gere-aqui {
+    margin-top: -3em;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#borda-gerar input, .texto-gerado {
+    border-radius: 35px;
+    width: 94%;
+    height: 3em;
+    border: none;
+    color: #BDBDBD;
+    padding-left: 2em;
+    box-shadow: 0px 0px 10px #00000026;
+}
+#borda-gerar, .link-gerado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.texto-gerado {
+    background-color: white;
+}
+
+/* obs: trocar para display FLEX e não para display BLOCK. */
+.link-gerado {
+    display: flex;
+    border-radius: 35px;
+    width: 80%;
+    height: 2.6em;
+    border: none;
+    color: #BDBDBD;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px #00000026;
+    background-color: white;
+    overflow: hidden;
+}
+#link-final {
+    margin: auto;
+    white-space: nowrap;
+}
+.link-gerado button:focus {
+    border: none;
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+#borda-gerar input:focus, #borda-gerar button:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+#borda-gerar button, .link-gerado button {
+    height: 3.2em;
+    width: 8em;
+    border-radius: 20px;
+    margin-left: -8em;
+    border: none;
+    color: white;
+    background-color: #06D755;
+    transition: 300ms;
+}
+.link-gerado button {
+    margin-left: -6em;
+}
+#borda-gerar button:hover, .link-gerado button:hover {
+    background: #00AA4E;
+    transition: 300ms;
+}
+.texto-gerado {
+    height: 2.7em;
+}
+.gere-aqui p {
+    color: #808080;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+#sec-verde {
+    background-color: #00AA4E;
+    padding: 4em 0;
+    justify-content: center;
+}
+.porque-usar { 
+    width: 40%;
+}
+#sec-verde img {
+    width: 25em;
+}
+.lista-porques {
+    padding-inline-start: 15px;
+    color: white;
+    width: 20em;
+}
+.lista-porques p {
+    line-height: 180%;
+}
+.porque-usar h2 {
+    color: white;
+}
+form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background: #262729;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    display: flex;
+    text-decoration: none;
+}
+footer img {
+    margin-right: 10px;
+}
+footer p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.linha {
+    margin-left: -9em;
+    width: 50px;
+    height: 10px;
+    background-color: #FFCA1A;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+.gerador-inicial-texto .linha {
+    margin-left: 0em;
+}
+.gerador-inicial-texto a:hover {
+    background-color: #EDBB17;
+    transition: 300ms;
+}
+.erro-preencher {
+    box-shadow: 0px 0px 5px #e50000!important;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #e6e6e6;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #00000044; 
+}
+#celular::-webkit-input-placeholder, #celular:-moz-placeholder, #celular::-moz-placeholder, #celular:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.mulher {
+    background-image: url("../img/mulher-celular.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30em;
+    height: 30em;
+}
+.mao {
+    background-image: url("../img/mao.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    top: 0;
+}
+.planta-amarela {
+    background-image: url("../img/planta-amarela.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    top: 0;
+}
+.planta-preta {
+    background-image: url("../img/planta-preta.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    top: 0;
+}
+@media only screen and (max-width: 1000px) {
+    #navbar {
+        width: 55%;
+    }
+    .gerador-inicial-texto h1 {
+        width: 100%;
+    }
+    .mulher-celular {
+        width: 25em;
+        height: 25em;
+    }
+    #fundo-amarelo {
+        top: -12em;
+        transform: skewY(15deg);
+    }
+    #sec-verde img {
+        width: 20em;
+    }
+    .lista-porques {
+        width: 15em;
+    }
+    .porque-usar h2 {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .gerador-inicial-texto h1 {
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .gerador-inicial {
+        width: 95%;
+    }
+    #sec-cinza img {
+        width: 12em;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .mulher-celular {
+        display: none;
+    }
+    .gerador-inicial {
+        justify-content: center;
+    }
+    .gerador-inicial-texto {
+        width: 95%;
+    }
+    #fundo-amarelo {
+        top: -21em;
+        transform: skewY(-10deg);
+    }
+    .gerador-inicial-texto h1 {
+        width: 67%;
+    }
+    .passo p {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+    #navbar {
+        width: 100%;
+        padding: 0;
+        background-color: #ffca1a;
+        padding: 0.5em 2em;
+        border-radius: 30px;
+    }
+    .passo p {
+        font-size: 16px;
+    }
+    #sec-cinza, #sec-verde {
+        display: flex;
+        flex-direction: column;
+    }
+    #sec-verde {
+        justify-content: center;
+        align-items: center;
+    }
+    .porque-usar {
+        width: 70%;
+    }
+    .porque-usar h2 {
+        width: 100%;
+    }
+    .lista-porques {
+        width: unset;
+    }
+    header {
+        height: 6em;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        flex-direction: column;
+        padding-top: 2em;
+        padding-bottom: 0.5em;
+    }
+    #fundo-amarelo {
+        display: none;
+    }
+    #navbar li {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    #mid-op {
+        border-left: 2px solid #0000001f;
+        border-right: 2px solid #0000001f;
+    }
+    #sec-cinza img {
+        display: none;
+    }
+    .gere-aqui {
+        margin-top: 1em;
+        margin-left: 0%;
+    }
+    .gerador-inicial-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gerador-inicial-texto h1 {
+        width: 100%;
+    }
+    .linha {    
+        align-self: baseline;
+    }
+    .gerador-inicial-texto p {
+        margin-bottom: 0;
+    }
+    #sec-branca {
+        margin-top: 10em;
+    }
+    #navbar li a:hover {
+        color: #ffffff;
+    }
+    .linha {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .passos-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .passo {
+        width: 95%;
+    }
+    #sec-verde img {
+        width: 15em;
+    }
+    h2 {
+        width: 90%;
+    }
+    #navbar li a {
+        font-size: 14px;
+    }
+    .como-funciona h2 {
+        display: flex;
+        justify-content: center;
+    }
+    .link-gerado button {
+        margin-left: -9em;
+    }
+}
+@media only screen and (max-width: 300px) {
+    #borda-gerar input, .texto-gerado {
+        padding-left: 1em;
+    }
+    .link-gerado button {
+        width: 7em;
+        margin-left: -12em;
+    }
+    #borda-gerar button {
+        width: 7em;
+        margin-left: -7em;
+    }
+    .gere-aqui p {
+        font-size: 10px;
+    }
+}
